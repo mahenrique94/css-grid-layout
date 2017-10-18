@@ -1,0 +1,31 @@
+body {
+    display: grid;
+    font-family: Arial, sans-serif;
+    grid-gap: 1rem;
+    grid-template-areas: 
+        "header header header"
+        "aside main main"
+        "footer footer footer";
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto 100vh auto;
+}
+
+.o-header, .o-aside, .o-main, .o-footer {
+    background: #BC20E2;
+    color: #FDFDFD;
+}
+
+.o-header {
+    grid-area: header;
+    padding: 2rem;
+}
+.o-aside {
+    grid-area: aside;
+}
+.o-main {
+    grid-area: main;
+}
+.o-footer {
+    grid-area: footer;
+    padding: 1rem;
+}
